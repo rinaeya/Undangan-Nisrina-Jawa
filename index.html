@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+
+  
+    <!-- Cover Section -->
+    <section class="cover" id="cover">
+        <div class="cover-content">
+            <h1>Undangan Pernikahan</h1>
+            <h2>Rizky & Ana</h2>
+            <h3>Untuk Tamu Terhormat : Ibu Jubaedah</h3>
+            <button onclick="scrollToSection('quotes')">Buka Undangan</button>
+            
+        </div>
+    </section>
+    
+    <!-- Navbar -->
+<div class="navbar">
+    <a href="#cover">Home</a>
+    <a href="#profile">Mempelai</a>
+    <a href="#event">Undangan</a>
+    <a href="#gallery">Map</a>
+    <a href="#rsvp">Rsvp</a>
+    
+</div>
+
+    <!-- Quotes Section -->
+    
+    
+    <section class="quotes" id="quotes">
+        <div class="quotes-content">
+            <h2>"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri..." (QS. Ar-Rum: 21)</h2>
+            <audio controls>
+                <source src="audio/1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <!-- Profil Pengantin -->
+    <section class="profile" id="profile">
+        <div class="bride">
+            <img src="images/cewe.jpg" alt="Bride">
+            <h2>Ana</h2>
+            <p>Putri dari Bapak dan Ibu Ana</p>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        <div class="groom">
+            <img src="images/cowo.jpg" alt="Groom">
+            <h2>Rizky</h2>
+            <p>Putra dari Bapak dan Ibu Rizky</p>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Tanggal Acara -->
+    <section class="event" id="event">
+        <h2>Tanggal Acara</h2>
+        <div class="event-details">
+            <div class="akad">
+                <h3>Akad Nikah</h3>
+                <p>Sabtu, 12 Oktober 2024</p>
+                <p>Lokasi: Masjid Agung</p>
+            </div>
+            <div class="resepsi">
+                <h3>Resepsi</h3>
+                <p>Minggu, 13 Oktober 2024</p>
+                <p>Lokasi: Gedung Serbaguna</p>
+            </div>
+        </div>
+    </section>
+    
+        <section class="guest-table">
+        <h2>Daftar Tamu Undangan Khusus</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Tamu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Turut Mengundang Bapak Supriyanto</td>
+                </tr>
+                <tr>
+                    <td>Turut Mengundang Ibu Siti</td>
+                </tr>
+                <tr>
+                    <td>Turut Mengundang Bapak Joko</td>
+                </tr>
+                <tr>
+                    <td>Turut Mengundang Ibu Ani</td>
+                </tr>
+                <tr>
+                    <td>Turut Mengundang Bapak Rudi</td>
+                </tr>
+                <tr>
+                    <td>Turut Mengundang Ibu Fitri</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Galeri -->
+    <section class="gallery" id="gallery">
+        <h2>Galeri Momen Bahagia</h2>
+        <div class="gallery-content">
+            <img src="images/1.jpg" alt="Moment 1">
+            <img src="images/2.jpg" alt="Moment 2">
+            <img src="images/3.jpg" alt="Moment 3">
+            <img src="images/4.jpg" alt="Moment 4">
+           <img src="images/5.jpg" alt="Moment 5">
+           <img src="images/6.jpg" alt="Moment 6">
+           <img src="images/7.jpg" alt="Moment 7">
+        </div>
+    </section>
+    
+    <!-- Video Section -->
+<section class="video-section">
+    <h2>Momen Bahagia Kami</h2>
+    <div class="video-wrapper">
+        <video controls>
+            <source src="video/wedding.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video tag. Silakan unduh video <a href="wedding.mp4">di sini</a>.
+        </video>
+    </div>
+</section>
+
+    <!-- RSVP -->
+    <section class="rsvp" id="rsvp">
+        <h2>RSVP (Konfirmasi Kehadiran)</h2>
+        <form action="#">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="attending">Akan Hadir:</label>
+            <select id="attending" required>
+                <option value="yes">Ya</option>
+                <option value="no">Tidak</option>
+            </select>
+            <button type="submit">Konfirmasi</button>
+        </form>
+    </section>
+    
+<section class="timeline">
+   <h2 class="timeline-title">Cerita Cinta</h2>
+    <div class="timeline-container left">
+        <div class="timeline-content">
+            <h3>Pertama Kali Berjumpa</h3>
+            <p>Kamis, 16 Oktober 2020</p>
+            <p>Pertama kali Ana dan Rizki bertemu di sebuah acara event...</p>
+        </div>
+    </div>
+    <div class="timeline-container right">
+        <div class="timeline-content">
+            <h3>rizky Mengunjungi Rumah ana Pertama Kali</h3>
+            <p>Minggu, 14 Desember 2020</p>
+            <p>Perjalanan cinta mereka berlanjut ketika Rizki...</p>
+        </div>
+    </div>
+    <div class="timeline-container left">
+        <div class="timeline-content">
+            <h3>Prosesi Lamaran</h3>
+            <p>Minggu, 15 Maret 2024</p>
+            <p>Setelah beberapa waktu menjalani hubungan, Rizki melamar Ana...</p>
+        </div>
+    </div>
+    <div class="timeline-container right">
+        <div class="timeline-content">
+            <h3>Kami Dipingit Satu Sama Lain</h3>
+            <p>Kamis, 11 Juni 2024</p>
+            <p>Setelah lamaran, Ana dan Rizki menjalani masa pingitan...</p>
+        </div>
+    </div>
+</section>
+
+<section class="gift-section">
+    <h2 class="gift-title">Tanda Kasih</h2>
+    <p class="gift-description">
+        Terima kasih telah menambah semangat kegembiraan pernikahan kami dengan kehadiran dan hadiah indah Anda.
+    </p>
+
+    <div class="gift-content">
+        <!-- Image QRIS -->
+        <img src="images/qris.png" alt="QRIS" class="gift-qris">
+
+        <!-- Copyable Text for Rekening -->
+        <div class="rekening-info">
+            <label for="rekening">Nomor Rekening:</label>
+            <input type="text" id="rekening" value="1234 5678 91011" readonly>
+            <button onclick="copyRekening()">Copy</button>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+
+<section class="message-section">
+    <h2 class="message-title">Pesan & Doa untuk Pengantin</h2>
+    <p class="message-description">
+        Berikan pesan dan doa terbaik untuk pernikahan kami. Doa dan harapan Anda sangat berarti bagi kami.
+    </p>
+
+    <form class="message-form">
+        <label for="message">Pesan & Doa Anda:</label>
+        <textarea id="message" name="message" placeholder="Tuliskan pesan atau doa Anda di sini..." rows="5" required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <div class="message-list">
+        <h3>Pesan dan Doa yang Telah Diterima:</h3>
+        <ul>
+            <li>Semoga kalian menjadi keluarga yang sakinah, mawaddah, warahmah. - Anisa</li>
+            <li>Barakallah untuk pernikahannya, semoga bahagia selalu. - Rudi</li>
+            <li>Selamat menempuh hidup baru, semoga selalu diberkahi kebahagiaan. - Siti</li>
+        </ul>
+    </div>
+</section>
+
+<br>
+<br>
+
+    <!-- Footer / Ucapan Terima Kasih -->
+    <footer class="footer">
+        <p>Matur nuwun sampun agungaken, kalihinan panjenengan dhateng panggonan kami, semoga kanthi rahayu lan sregep tanpa rintangan, inggih punika waktu mugi-mugi ngrangsang suka.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

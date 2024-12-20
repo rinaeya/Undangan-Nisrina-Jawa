@@ -1,0 +1,723 @@
+@font-face {
+    font-family: 'Java';
+    src: url('fonts/Java.woff2') format('woff2'),
+         url('fonts/Java.woff') format('woff'),
+         url('fonts/Java.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Java', sans-serif;
+    letter-spacing: 0.9px; /* Sesuaikan nilainya sesuai kebutuhan */
+}
+
+body {
+    font-family: 'Java', sans-serif;
+    font-weight: 300; /* Atau gunakan 'normal' jika itu lebih tepat */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #A79277;
+}
+
+/* Styling untuk Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Tambahkan ini untuk memastikan posisi fixed dari kiri */
+    width: 100%;
+    background-color: #fff; /* Background warna putih */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Shadow di atas */
+    padding: 10px 0;
+    z-index: 1000; /* Pastikan navbar berada di atas konten lain */
+}
+
+.navbar a {
+    color: #b85454; /* Warna merah untuk teks */
+    font-size: 16px;
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+    padding: 10px;
+    flex-grow: 1; /* Membuat jarak antar link merata */
+}
+
+.navbar a:hover {
+    color: #ff7171; /* Warna saat di-hover */
+}
+
+/* Agar isi halaman tidak menempel pada navbar */
+body {
+    padding-bottom: 80px; /* Tambahkan padding bawah agar isi tidak tertutup navbar */
+    margin: 0; /* Pastikan margin tidak menyebabkan overflow */
+}
+
+/* Styling tambahan untuk konten di atas navbar */
+.container {
+    margin-bottom: 100px; /* Beri jarak yang cukup antara konten dan navbar */
+}
+
+/* Responsiveness untuk tampilan mobile */
+@media (max-width: 600px) {
+    .navbar a {
+        font-size: 14px; /* Sesuaikan ukuran teks untuk layar kecil */
+        padding: 8px;
+    }
+
+    body {
+        padding-bottom: 90px; /* Sesuaikan jarak bawah untuk mobile */
+    }
+}
+
+
+/* styles.css */
+body {
+    font-family: 'Playfair Display', serif; /* Ganti dengan font pilihanmu */
+    background-color: #f8f8f8; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+}
+
+h1, h2, h3 {
+    font-family: 'Java', Sans-Serif; /* Ganti dengan font yang sesuai jika ada */
+    text-align: center;
+    color: #593d2e; /* Warna cokelat tua untuk nuansa Jawa */
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Cover Section */
+.cover {
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cover h1 {
+    font-size: 3.5rem;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.cover h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.cover h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.cover button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #593d2e;
+    font-family: 'Playfair Display', sans-serif;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    animation: fadeIn 3.5s ease-in-out;
+}
+
+.cover button:hover {
+    background-color: #593d2e;
+}
+
+/* Quotes Section */
+.quotes {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+}
+
+.quotes-content h2 {
+    font-size: 2rem;
+    color: #333;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+audio {
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Profile Section */
+.profile {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 20px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.bride, .groom {
+    text-align: center;
+}
+
+.bride img, .groom img {
+    max-width: 65%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.bride h2, .groom h2 {
+    font-size: 1.8rem;
+    color: #593d2e;
+    margin-bottom: 10px;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.bride p, .groom p {
+    font-size: 1.2rem;
+    color: #555;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.bride a, .groom a {
+    color: #593d2e;
+    text-decoration: none;
+    font-weight: bold;
+    animation: slideInRight 2.5s ease-in-out;
+}
+
+.bride a:hover, .groom a:hover {
+    color: #593d2e;
+}
+
+/* Media Queries untuk Laptop/Desktop */
+@media (min-width: 1024px) {
+    img {
+        width: 50%; /* Ukuran gambar di laptop jadi setengah dari kontainer */
+        max-width: 300px; /* Batas maksimum lebar gambar di laptop */
+    }
+}
+
+/* Tanggal Acara Section */
+.event {
+    background-color: #f8f9fa;
+    animation: fadeInRight 2s ease-in-out;
+}
+
+.event h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.event-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.event-details div {
+    text-align: center;
+}
+
+.event-details h3 {
+    font-size: 1.8rem;
+    color: #593d2e;
+}
+
+.event-details p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.guest-table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #f7f2ec; /* Latar belakang */
+}
+
+.guest-table {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #593d2e; /* Warna teks gelap */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #593d2e; /* Warna border tabel */
+    padding: 10px;
+    text-align: center;
+    color: #593d2e; /* Warna teks */
+}
+
+th {
+    background-color: #D1BB9E; /* Warna header tabel */
+    color: #fff; /* Warna teks header */
+}
+
+tbody tr {
+    background-color: #d6baa2; /* Warna coklat lembut untuk sel */
+}
+
+@media (max-width: 600px) {
+    table {
+        width: 90%; /* Atur lebar tabel agar lebih kecil di mobile */
+        margin: auto; /* Geser ke tengah */
+    }
+
+    th, td {
+        font-size: 14px; /* Sesuaikan ukuran font jika diperlukan */
+        padding: 8px; /* Sesuaikan padding */
+    }
+}
+
+/* Galeri Section */
+.gallery {
+    background-color: #ffffff;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Update di sini agar gambar tetap proporsional */
+.gallery-content img {
+    width: 30%;
+    height: auto; /* Otomatis mengikuti proporsi tinggi sesuai lebar */
+    border-radius: 10px;
+    margin: 15px;
+    object-fit: cover; /* Memastikan gambar sesuai kontainer tanpa gepeng */
+    transition: transform 0.3s ease;
+}
+
+.gallery-content img:hover {
+    transform: scale(1.1);
+    animation: zoomIn 0.5s ease;
+}
+
+/* Video Section */
+.video-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.video-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.video-wrapper video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-wrapper video:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* RSVP Section */
+.rsvp {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.rsvp h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.rsvp form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rsvp label {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.rsvp input, .rsvp select, .rsvp button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.rsvp button {
+    background-color: #A79277;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rsvp button:hover {
+    background-color: #A79277;
+}
+ 
+ /* Section Timeline */
+ 
+ .timeline-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+ 
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline-container {
+    padding: 20px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 100%; /* Full width for a centered, stacked layout */
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #d4d4d4;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Center the timeline line */
+    margin-left: -1px;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline-header {
+    background-color: #A79277; /* Pinkish background for the header */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 25px 25px 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.timeline-body {
+    padding: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.timeline-date {
+    color: #aaa;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .timeline-container {
+        padding: 15px 20px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+
+    .timeline-header {
+        font-size: 1.1rem;
+    }
+
+    .timeline-body {
+        font-size: 0.95rem;
+    }
+}
+
+/* Gift Section Styling */
+.gift-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff4f4;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gift-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ff7171;
+    margin-bottom: 20px;
+}
+
+.gift-description {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* QRIS Image Styling */
+.gift-qris {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Rekening Info */
+.rekening-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#rekening {
+    font-size: 1.1rem;
+    border: none;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    width: 180px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    font-size: 1rem;
+    padding: 5px 10px;
+    background-color: #ff7171;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4a4a;
+}
+
+/* Message Section Styling */
+.message-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.message-description {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.message-form label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: vertical;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #ff7171;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4a4a;
+}
+
+/* Pesan yang Diterima */
+.message-list {
+    text-align: left;
+}
+
+.message-list h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.message-list ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.message-list ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    background-color: #A79277;
+    padding: 15px 10px;
+    color: white;
+    text-align: center;
+    max-width: 100%; /* Pastikan footer tetap responsif */
+    max-height: 200px;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    padding-bottom: 60px;
+}
+
+/* Styling khusus untuk desktop */
+@media (min-width: 768px) { /* Menargetkan layar yang lebih besar dari 768px (desktop) */
+    .footer {
+        padding: 15px 10px; /* Atur padding untuk desktop */
+        max-height: 100px;  /* Sesuaikan tinggi footer di desktop */
+    }
+
+    .footer p {
+        padding-bottom: 20px; /* Kurangi padding pada text di desktop */
+    }
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
